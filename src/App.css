@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -13,14 +12,19 @@
   }
 }
 
-.App-header {
+.Hero-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 0 2em;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Hero-header a {
   color: white;
 }
 

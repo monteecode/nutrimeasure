@@ -3,7 +3,7 @@ import React from 'react'
 
 function Hero(){
     return (
-        <header>
+        <header className="Hero-header">
             <p>Nutrimeasure</p>
             <a href="#" >LOGIN</a>
         </header>
