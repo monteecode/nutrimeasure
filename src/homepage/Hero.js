@@ -1,12 +1,14 @@
 import React from 'react'
+import HeroHeader from './HeroHeader'
+import HeroMain from './HeroMain'
 
 
 function Hero(){
     return (
-        <header className="Hero-header">
-            <p>Nutrimeasure</p>
-            <a href="#" >LOGIN</a>
-        </header>
+        <div className="Hero">
+            <HeroHeader />
+            <HeroMain />
+        </div>
     )
 }
 

@@ -1,15 +1,10 @@
 .App {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Hero {
+  background-image: url("./img/fruits_veggies_1152X866.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Hero-header {
@@ -28,15 +23,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hero-main {
+  min-height: 90vh;
 }
