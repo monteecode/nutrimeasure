@@ -24,5 +24,13 @@
 }
 
 .Hero-main {
+  display: flex;
+  flex-direction: row;
   min-height: 90vh;
+}
+
+.Left-hero,
+.Right-hero {
+  max-width: 50%;
+  width: 50%;
 }

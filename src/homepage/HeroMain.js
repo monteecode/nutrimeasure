@@ -1,12 +1,12 @@
 import React from 'react'
+import LeftHero from './hero/LeftHero'
+import RightHero from './hero/RightHero'
 
 function HeroMain(){
     return(
         <section className="Hero-main">
-           <h1>Track your nutrient intake with 
-               <span>Nutrimeasure</span>
-           </h1>
-           <button>GET STARTED</button>
+            <LeftHero />
+            <RightHero />
         </section>
     )
 
