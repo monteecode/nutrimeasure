@@ -26,6 +26,8 @@
 .Hero-main {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   min-height: 90vh;
 }
 
