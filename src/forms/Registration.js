@@ -6,7 +6,8 @@ class Registraton extends Component {
         firstName: '',
         lastName: '',
         age: '',
-        username: ''
+        username: '',
+        gender: ''
     }
 
     handleChange = (e) => {
@@ -19,7 +20,7 @@ class Registraton extends Component {
     render(){
         return(
 
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <label>
                     First Name:
                     <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
@@ -39,12 +40,13 @@ class Registraton extends Component {
                 <fieldset>
                     <legend>Gender</legend>
                     <label for="female">
-                        <input id="female" type="radio" name="gender" value="female" checked={this.state.gender} onChange={this.handleChange} />
+                        <input id="female" type="radio" name="gender" value="female" checked={this.state.gender === "female"} onChange={this.handleChange} />
                     </label>
                     <label for="male">
-                        <input id="male" type="" name="gender" value="male" checked={this.state.gender} onChange={this.handleChange} />
+                        <input id="male" type="" name="gender" value="male" checked={this.state.gender === "male"} onChange={this.handleChange} />
                     </label>
                 </fieldset>
+                <button>Submit</button>
             </form>
             
         )
