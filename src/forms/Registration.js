@@ -4,7 +4,8 @@ import React, {Component} from 'react'
 class Registraton extends Component {
     state = {
         firstName: '',
-        lastName: ''
+        lastName: '',
+        age: ''
     }
 
     handleChange = (e) => {
@@ -25,6 +26,10 @@ class Registraton extends Component {
                 <label>
                     Last Name:
                     <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
+                </label>
+                <label>
+                    Age:
+                    <input type="number" name="age" value={this.state.age} onChange={this.handleChange} />
                 </label>
             </form>
             
