@@ -7,17 +7,24 @@ class Registraton extends Component {
         lastName: ''
     }
 
+    handleChange = (e) => {
+        const {name, value} = e.target
+        this.setState({
+            [name]: value
+        })
+    }
+
     render(){
         return(
 
             <form>
                 <label>
                     First Name:
-                    <input type="text" name="firstName" value={this.state.firstName} />
+                    <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
                 </label>
                 <label>
                     Last Name:
-                    <input type="text" name="lastName" value={this.state.lastName} />
+                    <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
                 </label>
             </form>
             
