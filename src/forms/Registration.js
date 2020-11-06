@@ -36,6 +36,15 @@ class Registraton extends Component {
                     Username:
                     <input type="text" name="login" value={this.state.username} onChange={this.handleChange} />
                 </label>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="female">
+                        <input id="female" type="radio" name="gender" value="female" checked={this.state.gender} onChange={this.handleChange} />
+                    </label>
+                    <label for="male">
+                        <input id="male" type="" name="gender" value="male" checked={this.state.gender} onChange={this.handleChange} />
+                    </label>
+                </fieldset>
             </form>
             
         )
