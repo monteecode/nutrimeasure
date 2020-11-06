@@ -5,7 +5,8 @@ class Registraton extends Component {
     state = {
         firstName: '',
         lastName: '',
-        age: ''
+        age: '',
+        username: ''
     }
 
     handleChange = (e) => {
@@ -30,6 +31,10 @@ class Registraton extends Component {
                 <label>
                     Age:
                     <input type="number" name="age" value={this.state.age} onChange={this.handleChange} />
+                </label>
+                <label>
+                    Username:
+                    <input type="text" name="login" value={this.state.username} onChange={this.handleChange} />
                 </label>
             </form>
             
