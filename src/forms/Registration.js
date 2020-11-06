@@ -9,6 +9,17 @@ class Registraton extends Component {
 
     render(){
         return(
+
+            <form>
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" value={this.state.firstName} />
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" value={this.state.lastName} />
+                </label>
+            </form>
             
         )
     }
