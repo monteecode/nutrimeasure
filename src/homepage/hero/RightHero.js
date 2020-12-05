@@ -6,11 +6,11 @@ const RightHero = () => {
     return (
         <div className="Right-hero">
             <button>
-                <Link to='/forms/registration'>GET STARTED</Link>
+                <Link to='/register'>GET STARTED</Link>
             </button>
 
             <Switch>
-                <Route path='/forms/registration'>
+                <Route path='/register'>
                     <Registration />
                 </Route>
             </Switch>
