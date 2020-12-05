@@ -1,12 +1,12 @@
 import React from 'react'
-import HeroHeader from './HeroHeader'
+import HeroNav from './HeroNav'
 import HeroMain from './HeroMain'
 
 
 function Hero(){
     return (
         <div className="Hero">
-            <HeroHeader />
+            <HeroNav />
             <HeroMain />
         </div>
     )

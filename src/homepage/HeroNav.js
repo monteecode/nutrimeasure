@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, Route, Switch} from 'react-router-dom'
 import Login from '../forms/Login'
 
-function HeroHeader(){
+function HeroNav(){
     return (
         <header className="Hero-header">
             <Link to="/">Nutrimeasure</Link>
@@ -20,4 +20,4 @@ function HeroHeader(){
     )
 }
 
-export default HeroHeader
+export default HeroNav
