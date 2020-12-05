@@ -13,15 +13,18 @@ class Login extends Component {
         })
     }
 
-    return(){
-        <form>
+    render(){
+        return(
+        <form onSubmit={this.handleSubmit}>
             <label>Username:
                 <input type="text" name="userName" value={this.state.userName} handleChange={this.handleChange}/>
             </label>
             <label>Password:
                 <input type="password" name="password" value={this.state.password} handleChange={this.handleChange} />
             </label>
+            <button>Login</button>
         </form>
+        )
     }
 
 }
