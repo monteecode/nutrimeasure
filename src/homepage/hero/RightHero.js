@@ -1,6 +1,5 @@
 import React from 'react'
-import {Switch, Route, Link} from 'react-router-dom'
-import Registration from '../../forms/Registration'
+import {Link} from 'react-router-dom'
 
 const RightHero = () => {
     return (
@@ -8,12 +7,6 @@ const RightHero = () => {
             <button>
                 <Link to='/register'>GET STARTED</Link>
             </button>
-
-            <Switch>
-                <Route path='/register'>
-                    <Registration />
-                </Route>
-            </Switch>
         </div>
     )
 }
