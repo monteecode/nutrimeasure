@@ -38,11 +38,11 @@ class Registration extends Component {
                 </label>
                 <fieldset>
                     <legend>Gender</legend>
-                    <label for="female">
+                    <label for="female">Female
                         <input id="female" type="radio" name="gender" value="female" checked={this.state.gender === "female"} onChange={this.handleChange} />
                     </label>
-                    <label for="male">
-                        <input id="male" type="" name="gender" value="male" checked={this.state.gender === "male"} onChange={this.handleChange} />
+                    <label for="male">Male
+                        <input id="male" type="radio" name="gender" value="male" checked={this.state.gender === "male"} onChange={this.handleChange} />
                     </label>
                 </fieldset>
                 <button>Submit</button>
